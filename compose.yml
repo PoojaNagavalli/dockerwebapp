@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: pooja0611/automate:db
+    image: pooja0611/autodep:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: pooja0611/automate:app
+    image: pooja0611/autodep:app
     ports:
       - "1111:8080"
     deploy:
